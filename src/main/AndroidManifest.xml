@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.oucb303.training">
+
+    <uses-feature android:name="android.hardware.usb.host"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+
+
+    <application
+        android:name=".App"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--<activity android:name=".activity.MainActivity">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"/>-->
+            <!--</intent-filter>-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>-->
+            <!--</intent-filter>-->
+
+            <!--<meta-data-->
+                <!--android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"-->
+                <!--android:resource="@xml/device_filter"/>-->
+        <!--</activity>-->
+
+        <activity android:name=".activity.MainNewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter"/>
+        </activity>
+
+        <activity android:name=".activity.RandomTrainingActivity">
+            <intent-filter>
+                <action android:name="RandomTrainingActivity.class"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.BaseTrainingActivity"/>
+        <activity
+            android:name=".activity.SequenceTrainingActivity"
+            android:windowSoftInputMode="stateUnchanged|adjustPan"/>
+        <activity android:name=".activity.TrainingListActivity"/>
+        <activity android:name=".activity.ShuttleRunActivity"/>
+        <activity android:name=".activity.ShuttleRunActivity1">
+            <intent-filter>
+                <action android:name="ShuttleRunActivity1.class"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LargeRecessActivity">
+            <intent-filter>
+                <action android:name="LargeRecessActivity.class"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.DetailsActivity"/>
+        <activity android:name=".activity.VideoActivity"/>
+        <activity android:name=".activity.SitUpsActivity">
+            <intent-filter>
+                <action android:name="SitUpsActivity.class"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.EightSecondRunActivity">
+            <intent-filter>
+                <action android:name="EightSecondRunActivity.class"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.BoldCautiousActivity"/>
+        <activity
+            android:name=".activity.TestActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+        </activity>
+        <activity android:name=".activity.JumpHighActivity">
+            <intent-filter>
+                <action android:name="JumpHighActivity.class"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.GroupConfrontationActivity">
+        </activity>
+        <activity android:name=".activity.SettingActivity">
+        </activity>
+        <activity android:name=".activity.AboutSafLightActivity">
+        </activity>
+        <activity android:name=".activity.SequenceRunningActivity">
+        </activity>
+        <activity android:name=".activity.DribblingGameActivity">
+            <intent-filter>
+                <action android:name="DribblingGameActivity.class"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.WireNetConfrontationActivity">
+            <intent-filter>
+                <action android:name="WireNetConfrontationActivity.class"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.HelpActivity">
+        </activity>
+
+        <activity android:name=".activity.SequenceChooseActivity"/>
+
+        <activity
+            android:name=".activity.SaveActivity"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity android:name=".activity.TimingModuleActivity">
+        </activity>
+        <activity android:name=".activity.TimeKeeperActivity">
+        </activity>
+        <activity android:name=".activity.RandomTimesModuleActivity">
+        </activity>
+        <activity android:name=".activity.RandomTimeActivity">
+        </activity>
+        <activity android:name=".activity.GroupResistActivity">
+        </activity>
+        <activity android:name=".activity.BadmintonActivity">
+        </activity>
+        <activity android:name=".activity.NavigationActivity">
+        </activity>
+        <activity android:name=".activity.CombinedTrainingActivity">
+        </activity>
+        <activity android:name=".activity.ApplicationToolsActivity">
+        </activity>
+        <activity android:name=".activity.HackerSpaceActivity">
+        </activity>
+
+
+
+    </application>
+
+</manifest>
